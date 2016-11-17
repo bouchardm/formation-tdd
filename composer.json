@@ -1,0 +1,8 @@
+{
+    "autoload": {
+        "App": "/"
+    },
+    "require": {
+        "phpunit/phpunit": "^5.6"
+    }
+}
