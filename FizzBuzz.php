@@ -6,6 +6,6 @@ class FizzBuzz
 {
     public function execute($int)
     {
-        return 1;
+        return $int;
     }
 }

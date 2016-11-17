@@ -23,4 +23,16 @@ class StackTest extends TestCase
         // Then
         $this->assertEquals(1, $result);
     }
+
+    public function testQuandJePasse2AlorsJeRecois2()
+    {
+        // Given
+        $fb = new FizzBuzz();
+
+        // When
+        $result = $fb->execute(2);
+
+        // Then
+        $this->assertEquals(2, $result);
+    }
 }
