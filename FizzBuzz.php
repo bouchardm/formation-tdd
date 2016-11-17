@@ -4,19 +4,19 @@ namespace App;
 
 class FizzBuzz
 {
-    public function execute($int)
+    public function execute($number)
     {
-        if ($int % 15 == 0) return 'fizzbuzz';
-        if ($int % 3 == 0) return 'fizz';
-        if ($int % 5 == 0) return 'buzz';
+        if ($number % 15 == 0) return 'fizzbuzz';
+        if ($number % 3 == 0) return 'fizz';
+        if ($number % 5 == 0) return 'buzz';
 
-        return $int;
+        return $number;
     }
 
-    public function executeUpTo($int)
+    public function executeUpTo($number)
     {
         return array_map(function ($item) {
             return $this->execute($item);
-        }, range(1, $int));
+        }, range(1, $number));
     }
 }
