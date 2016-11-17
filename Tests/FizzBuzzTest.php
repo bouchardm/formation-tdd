@@ -61,4 +61,11 @@ class StackTest extends TestCase
 
         $this->assertEquals('fizzbuzz', $result);
     }
+
+    public function testQuandJeDemandeJusqua10AlorsJeRecoisUneListeQuiRespecteFizzBuzz()
+    {
+        $result = $this->fb->executeUpTo(10);
+
+        $this->assertEquals([1, 2, 'fizz', 4, 'buzz', 'fizz', 7, 8, 'fizz', 'buzz'], $result);
+    }
 }

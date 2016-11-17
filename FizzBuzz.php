@@ -12,4 +12,13 @@ class FizzBuzz
 
         return $int;
     }
+
+    public function executeUpTo($int)
+    {
+        $output = [];
+        foreach (range(1, $int) as $item) {
+            $output[] = $this->execute($item);
+        }
+        return $output;
+    }
 }
