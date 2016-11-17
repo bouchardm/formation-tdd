@@ -6,12 +6,10 @@ class FizzBuzz
 {
     public function execute($int)
     {
-        $output = '';
-        if ($int % 3 == 0) $output .= 'fizz';
-        if ($int % 5 == 0) $output .= 'buzz';
+        if ($int % 15 == 0) return 'fizzbuzz';
+        if ($int % 3 == 0) return 'fizz';
+        if ($int % 5 == 0) return 'buzz';
 
-        if ($output) return $output;
-        
         return $int;
     }
 }
