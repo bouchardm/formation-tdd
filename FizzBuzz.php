@@ -4,8 +4,8 @@ namespace App;
 
 class FizzBuzz
 {
-    public function __construct()
+    public function execute($int)
     {
-
+        return 1;
     }
 }
