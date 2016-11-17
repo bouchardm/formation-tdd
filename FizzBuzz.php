@@ -15,10 +15,8 @@ class FizzBuzz
 
     public function executeUpTo($int)
     {
-        $output = [];
-        foreach (range(1, $int) as $item) {
-            $output[] = $this->execute($item);
-        }
-        return $output;
+        return array_map(function ($item) {
+            return $this->execute($item);
+        }, range(1, $int));
     }
 }
