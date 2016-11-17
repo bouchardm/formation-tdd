@@ -47,4 +47,11 @@ class StackTest extends TestCase
 
         $this->assertEquals('buzz', $result);
     }
+
+    public function testQuandJePasse10AlorsJeRecoisBuzz()
+    {
+        $result = $this->fb->execute(10);
+
+        $this->assertEquals('buzz', $result);
+    }
 }
